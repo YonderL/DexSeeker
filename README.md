@@ -26,7 +26,7 @@
   </tr>
 </table>
 
-<sub>Still frames from <a href="https://github.com/isaac-sim/IsaacGymEnvs"><code>isaac-sim/IsaacGymEnvs</code></a> docs (NVIDIA Isaac ecosystem). Older GIF URLs in many READMEs now 404 after the repo move and asset refresh.</sub>
+<sub>Still frames from <a href="https://github.com/isaac-sim/IsaacGymEnvs"><code>isaac-sim/IsaacGymEnvs</code></a> docs (NVIDIA Isaac ecosystem).</sub>
 
 </div>
 
@@ -92,7 +92,6 @@ docker-compose up -d --build
 - [ ] Phase 2 — V0.2 · Memory-Augmented Search
 - [ ] Phase 3 — V1.0 · Full House Explorer
 
-When a phase is **done**, mark it `- [x]` and wrap the phase label in `~~strikethrough~~`, e.g. `- [x] ~~Phase 1 — V0.1 · The Desktop Rummager~~`. Omit `~~` if you prefer a plain checked item only.
 
 ## 🤝 Contributing
 
