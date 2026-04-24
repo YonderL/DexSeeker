@@ -1,0 +1,66 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.egg-info
+
+# === Virtual environments ===
+.venv/
+venv/
+env/
+
+# === IDE / Editor ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === ML / Checkpoints ===
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.safetensors
+weights/
+checkpoints/
+
+# === Data & Logs ===
+*.csv
+*.log
+*.parquet
+*.hdf5
+*.h5
+results/
+outputs/
+wandb/
+runs/
+tensorboard/
+
+# === Docker / Isaac Sim ===
+.env
+*.tmp
+.isaacsim/
+omniverse-kit-cache/
+
+# === Claude Code ===
+CLAUDE.md
+.claude/
+
+# === Testing & Coverage ===
+.pytest_cache/
+.coverage
+htmlcov/
+
+# === Docs ===
+docs/_build/
+site/
