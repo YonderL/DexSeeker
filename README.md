@@ -82,22 +82,36 @@ docker-compose up -d --build
 
 | Phase | Milestone | Description |
 | :---: | :--- | :--- |
-| 1 | **V0.1 · The Desktop Rummager** | Implement basic pushing/uncovering policies for a robot arm in a cluttered desk simulation. |
-| 2 | **V0.2 · Memory-Augmented Search** | Integrate local episodic memory. The robot remembers where it saw an item minutes ago and navigates there. |
-| 3 | **V1.0 · Full House Explorer** | Full integration of VLM navigation, memory reasoning, and dexterous uncovering in a multi-room Isaac Sim environment. |
+| 1 | **V0.1 · Semantic Pathfinder** | Deploy a local LLM to parse natural language intents and map them to a known topological semantic map, driving autonomous navigation (Nav2) to the target room. |
+| 2 | **V0.2 · The Desktop Rummager** | Building upon V0.1, integrate visual perception, robotic arm control, VLA, or WAM to implement pushing and uncovering policies for local search in cluttered desktop environments. |
+| 3 | **V0.3 · Memory-Augmented Search** | Integrate local episodic memory. The robot records object locations during exploration and can navigate directly to memorized coordinates when queried. |
+| 4 | **V1.0 · Full House Explorer** | Full system integration: Seamlessly orchestrate semantic navigation, memory reasoning, active visual search, and dexterous manipulation in a complex multi-room simulation environment. |
 
 **Checklist (sync with the table above)**
 
-- [ ] Phase 1 — V0.1 · The Desktop Rummager
-- [ ] Phase 2 — V0.2 · Memory-Augmented Search
-- [ ] Phase 3 — V1.0 · Full House Explorer
+- [ ] Phase 1 — V0.1 · Semantic Pathfinder
+- [ ] Phase 2 — V0.2 · The Desktop Rummager
+- [ ] Phase 3 — V0.3 · Memory-Augmented Search
+- [ ] Phase 4 — V1.0 · Full House Explorer
 
 
 ## 🤝 Contributing
 
-We welcome contributions from researchers, full-stack engineers, and robotics enthusiasts.
+We welcome contributions from researchers, robotics engineers, and open-source enthusiasts.
 
-Whether you are interested in fine-tuning VLMs, optimizing FastAPI backends, or training DiT control policies in simulation, there is a place for you here. Please read our `CONTRIBUTING.md` to get started. Let's build the future of Embodied AI together.
+As DexSeeker evolves from a desktop manipulation task into a full-house exploration system, our technical stack is expanding. Whether your expertise lies in high-level semantic reasoning or low-level motor control, there is a place for you here.
+
+We are actively looking for contributions in the following core areas:
+
+- 🧠 Semantic Reasoning & Memory (Phases 1 & 3): Deploying lightweight local LLMs, designing prompt pipelines for spatial reasoning, and structuring local episodic memory mechanisms.
+
+- 🗺️ Navigation & Simulation (Phases 1 & 4): Tuning ROS 2 Nav2 for robust indoor navigation, building topological maps, and creating complex multi-room environments in Isaac Lab.
+
+- 🦾 Perception & Manipulation (Phase 2): Integrating Vision-Language-Action (VLA) models, visual tracking, and refining dexterous pushing/uncovering policies for cluttered scenes.
+
+- ⚡ Edge Optimization: Optimizing model inference and system orchestration for local-only deployment on edge computing hardware (e.g., Jetson AGX Orin).
+
+Please read our `CONTRIBUTING.md` to get started with the development environment setup and PR submission guidelines. Let's build the future of Embodied AI together!
 
 ## 📄 License
 
